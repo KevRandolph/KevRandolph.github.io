@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Design and Engineering | Kevin Randolph</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1 { color: #1a5276; }
+        h2 { color: #2874a6; margin-top: 30px; }
+        a { color: #2874a6; }
+        .back { margin-bottom: 20px; display: inline-block; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <a class="back" href="../">&larr; Back to home</a>
+    <h1>Software Design and Engineering</h1>
+    <p><strong>Artifact:</strong> Contact Service (Java) — originally built in CS 320, Software Testing, Automation, and QA.</p>
+
+    <h2>Narrative</h2>
+    <p><a href="narrative.docx">Download the enhancement narrative (.docx)</a></p>
+
+    <h2>Original Code</h2>
+    <ul>
+        <li><a href="original/Contact.java">Contact.java</a></li>
+        <li><a href="original/ContactService.java">ContactService.java</a></li>
+        <li><a href="original/ContactTest.java">ContactTest.java</a></li>
+        <li><a href="original/ContactServiceTest.java">ContactServiceTest.java</a></li>
+    </ul>
+
+    <h2>Enhanced Code</h2>
+    <ul>
+        <li><a href="enhanced/Contact.java">Contact.java</a></li>
+        <li><a href="enhanced/ContactService.java">ContactService.java</a></li>
+        <li><a href="enhanced/ContactTest.java">ContactTest.java</a></li>
+        <li><a href="enhanced/ContactServiceTest.java">ContactServiceTest.java</a></li>
+    </ul>
+
+    <h2>Summary of Enhancements</h2>
+    <p>The original implementation stored contacts in an ArrayList, requiring a linear scan for lookups
+    and duplicate-ID checks. The enhanced version replaces this with a HashMap keyed by contact ID,
+    reducing both operations to constant time. The enhancement also closes an empty-string validation
+    gap that allowed blank contact fields to pass validation, and expands the JUnit test suite to cover
+    both that gap and true boundary-value cases.</p>
+</body>
+</html>
