@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithms and Data Structures | Kevin Randolph</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1 { color: #1a5276; }
+        h2 { color: #2874a6; margin-top: 30px; }
+        a { color: #2874a6; }
+        .back { margin-bottom: 20px; display: inline-block; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <a class="back" href="../">&larr; Back to home</a>
+    <h1>Algorithms and Data Structures</h1>
+    <p><strong>Artifact:</strong> Pirate Intelligent Agent (deep Q-learning maze-navigating reinforcement learning agent) — originally built in CS 370, Current and Emerging Trends in Computer Science.</p>
+
+    <h2>Narrative</h2>
+    <p><a href="narrative.docx">Download the enhancement narrative (.docx)</a></p>
+
+    <h2>Original Code</h2>
+    <ul>
+        <li><a href="original/Randolph_Kevin_Project2.html">Original Notebook (HTML export)</a></li>
+    </ul>
+
+    <h2>Enhanced Code</h2>
+    <ul>
+        <li><a href="enhanced/TreasureHuntGame_Enhanced.ipynb">Enhanced Notebook (.ipynb)</a></li>
+    </ul>
+
+    <h2>Summary of Enhancements</h2>
+    <p>The original implementation already tracked win history, rolling win rate, and loss internally during training,
+    but this data was only ever printed to the console as text. The enhanced version adds visualization by plotting
+    win rate and loss over the course of training, changes the game-playing function to report step count in addition
+    to win/loss so training efficiency can be measured, and adds a comparison harness that trains the agent with two
+    different exploration decay rates and plots the results side by side.</p>
+</body>
+</html>
