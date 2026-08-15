@@ -6,11 +6,13 @@
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
         h1 { color: #1a5276; }
+        h2 { color: #2874a6; margin-top: 30px; }
         nav ul { list-style: none; padding: 0; }
         nav li { margin: 10px 0; }
         nav a { text-decoration: none; color: #2874a6; font-size: 1.1em; }
         nav a:hover { text-decoration: underline; }
         .status { color: #888; font-size: 0.9em; }
+        .section-divider { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
         .video-link { margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; }
     </style>
 </head>
@@ -18,16 +20,73 @@
     <h1>Kevin Randolph</h1>
     <p>Computer Science ePortfolio — CS 499 Capstone</p>
 
-    <nav>
-        <ul>
-            <li><a href="software-design-engineering/">Software Design and Engineering</a>
-                <span class="status">(Contact Service — CS 320)</span></li>
-            <li><a href="algorithms-data-structures/">Algorithms and Data Structures</a>
-                <span class="status">(Pirate Intelligent Agent — CS 370)</span></li>
-            <li><a href="databases/">Databases</a>
-                <span class="status">(Grazioso Salvare Dashboard — CS 340)</span></li>
-        </ul>
-    </nav>
+    <h2>Professional Self-Assessment</h2>
+
+    <p>I am a Computer Science student completing my degree with a concentration in data analytics, and this capstone
+    represents the culmination of twenty-two courses across the program. Alongside my coursework, I work at IBM in a
+    role focused on data validation and approval workflows for engineering, supplier, and finance data, and I
+    co-own Black Squirrel Sealcoating LLC, a small business I operate part-time. My long-term goal is to eventually
+    transition from my current role at IBM to launch an analytics and management consulting firm serving small
+    trades businesses, an industry where my working career began before I moved into data analytics. This program,
+    and the process of building this ePortfolio in particular, has sharpened both the technical skills and the
+    professional habits I intend to carry into that next stage of my career.</p>
+
+    <h3>Collaboration and Stakeholder Communication</h3>
+    <p>Collaboration and stakeholder communication have been a consistent thread throughout both my academic and
+    professional work, even though the majority of my program coursework was completed on an individual basis. At
+    IBM, I recently assumed a co-team lead role alongside two colleagues, one of whom is based in Singapore,
+    requiring our team to work effectively across significant time zone differences to remain aligned. In my daily
+    responsibilities, I coordinate engineering change content across teams and departments worldwide, ensuring that
+    information is accurate and released on schedule, as errors at this stage can directly impact manufacturing
+    operations. I have also collaborated with colleagues at IBM on a patented internal process, and am listed as
+    co-inventor on U.S. Patent 12,436,874, Computer System Test Parallelization, which required working closely
+    with other engineers to develop and formally document an approach for review and protection. Within the
+    program itself, collaboration took a more informal form through discussion boards, where students worked
+    through project questions together across several courses.</p>
+
+    <h3>Data Structures, Algorithms, Software Engineering, and Databases</h3>
+    <p>Data structures and algorithms, along with software engineering and database work, are the technical core of
+    what this program and this capstone have demonstrated. Beyond the three artifacts in this ePortfolio, I worked
+    on a project in a data analytics course that involved merging and analyzing real crime and storm event datasets
+    using Python, MySQL, and Jupyter Notebooks, which required the same kind of structural thinking about data
+    organization and query efficiency that shows up in my enhanced database artifact here. My capstone enhancements
+    themselves reflect direct, deliberate work in this space, including refactoring a contact management system
+    from a linear data structure to a hash-based one for efficiency, and building a MongoDB aggregation pipeline to
+    produce grouped, summarized data rather than only flat query results.</p>
+
+    <h3>Security</h3>
+    <p>Security has become an increasingly central part of how I approach my technical work, both in this program
+    and at IBM, where data validation and approval workflows exist specifically to catch errors and vulnerabilities
+    before they reach production systems. In this capstone, that mindset is most visible in my database
+    enhancement, where I identified that a reusable module had been built securely, accepting credentials as
+    parameters rather than hardcoding them, while the application built on top of it hadn't followed that same
+    discipline. Closing that gap, along with improving how failed database connections are handled, was one of the
+    clearest, most concrete demonstrations of a security mindset across my entire capstone.</p>
+
+    <h3>How the Artifacts Fit Together</h3>
+    <p>The three artifacts that follow in this ePortfolio were chosen specifically to represent growth across the
+    three key areas of computer science this program covers. My software design and engineering artifact, a contact
+    management system originally built in CS 320, demonstrates data structure selection, defensive programming, and
+    test coverage design. My algorithms and data structures artifact, a reinforcement learning agent originally
+    built in CS 370, demonstrates algorithm evaluation and experiment design through added visualization and
+    comparison tooling. My databases artifact, a MongoDB dashboard originally built in CS 340, demonstrates secure
+    configuration, query design, and defensive error handling. Together, these three pieces of work reflect both
+    where I started in this program and the more deliberate, security-conscious engineer I've become by the end of
+    it.</p>
+
+    <div class="section-divider">
+        <h2>Explore My Work</h2>
+        <nav>
+            <ul>
+                <li><a href="software-design-engineering/">Software Design and Engineering</a>
+                    <span class="status">(Contact Service — CS 320)</span></li>
+                <li><a href="algorithms-data-structures/">Algorithms and Data Structures</a>
+                    <span class="status">(Pirate Intelligent Agent — CS 370)</span></li>
+                <li><a href="databases/">Databases</a>
+                    <span class="status">(Grazioso Salvare Dashboard — CS 340)</span></li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="video-link">
         <p><a href="https://youtu.be/SksowBDayps">Watch my Code Review Video (Milestone One)</a></p>
