@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Databases | Kevin Randolph</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1 { color: #1a5276; }
+        h2 { color: #2874a6; margin-top: 30px; }
+        a { color: #2874a6; }
+        .back { margin-bottom: 20px; display: inline-block; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <a class="back" href="../">&larr; Back to home</a>
+    <h1>Databases</h1>
+    <p><strong>Artifact:</strong> Grazioso Salvare Dashboard (MongoDB/Dash) — originally built in CS 340, Client and Server Development.</p>
+
+    <h2>Narrative</h2>
+    <p><a href="narrative.docx">Download the enhancement narrative (.docx)</a></p>
+
+    <h2>Original Code</h2>
+    <ul>
+        <li><a href="original/CRUD_Python_Module.py">CRUD_Python_Module.py</a></li>
+        <li><a href="original/dashboard.py">dashboard.py</a></li>
+    </ul>
+
+    <h2>Enhanced Code</h2>
+    <ul>
+        <li><a href="enhanced/CRUD_Python_Module.py">CRUD_Python_Module.py</a></li>
+        <li><a href="enhanced/dashboard.py">dashboard.py</a></li>
+    </ul>
+
+    <h2>Summary of Enhancements</h2>
+    <p>The original CRUD module already passed database credentials in as parameters rather than hardcoding them,
+    but the dashboard script that used it hardcoded credentials anyway. The enhanced version moves those credentials
+    into environment variables, adds a custom exception so a failed database connection is raised clearly instead of
+    silently returning empty results, replaces four fixed rescue-type filter presets with independently combinable
+    filters for breed, sex, and age range, adds a MongoDB aggregation pipeline to produce grouped breed-count
+    summaries, and changes the map callback to look up columns by name first instead of by fragile positional index.</p>
+</body>
+</html>
